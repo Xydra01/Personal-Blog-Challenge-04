@@ -1,0 +1,133 @@
+:root {
+	--borderBlack: 2px solid black;
+}
+
+/* * {
+	border: 1px solid red;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+} */
+
+body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	flex: 0 0 100%;
+	margin-bottom: 2px;
+	height: 70px;
+	border-bottom: var(--borderBlack);
+	border-left: var(--borderBlack);
+	border-right: var(--borderBlack);
+}
+
+main {
+	flex: 0 0 100%;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	margin-top: 2px;
+}
+
+.header {
+	display: flex;
+	flex: 0 0 100%;
+	justify-content: flex-end;
+}
+
+.welcomeBox {
+	display: flex;
+	flex: 1 1 50%;
+	margin-right: 2px;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+}
+
+.welcomeCircle {
+	display: flex;
+	width: 70%;
+	height: 70%;
+	border-radius: 100%;
+	justify-content: center;
+	align-items: center;
+	background: rgb(143, 143, 143);
+	background: linear-gradient(
+		0deg,
+		rgba(143, 143, 143, 1) 0%,
+		rgba(255, 203, 0, 1) 76%
+	);
+}
+
+.welcomeCircle h1 {
+	font-size: 400%;
+	color: white;
+}
+
+.userForm {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 2px;
+	justify-content: center;
+	border: 2px solid black;
+}
+#formButton {
+	display: flex;
+	justify-content: center;
+}
+
+#formButton input {
+	color: white;
+	background-color: black;
+	height: 4vh;
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+	font-size: 150%;
+}
+
+#lightButton {
+	text-decoration: none;
+	font-size: 200%;
+}
+
+.formItems {
+	display: flex;
+	flex-direction: column;
+	line-height: 28px;
+	padding: 10px;
+}
+
+.formItems div {
+	display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.formItems div input[type="text"] {
+	flex: 0 0 99%;
+	padding: top;
+}
+
+.formItems textarea {
+	border-radius: 4px;
+}
+
+.formItems input {
+	line-height: 28px;
+	border-radius: 4px;
+}
+
+.userForm h2 {
+	text-align: center;
+	font-size: 200%;
+}

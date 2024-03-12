@@ -17,45 +17,69 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="./assets/css/form.css"
+			href="./assets/css/style.css"
 		/>
 	</head>
 	<body>
 		<header>
-			<div class="header"></div>
+			<div class="header">
+				<div class="headerButtons">
+					<a
+						id="lightButton"
+						href="#"
+						>&#9728;&#65039;</a
+					>
+				</div>
+			</div>
 		</header>
 		<main>
 			<div class="welcomeBox">
-				<div class="welcomeCircle"></div>
+				<div class="welcomeCircle"><h1>My First Blog</h1></div>
 			</div>
 
 			<div class="userForm">
+				<div id="formBoxTitle">
+					<h2>What's on your mind?</h2>
+				</div>
 				<form>
-					<label for="userName">Username</label>
-					<input
-						type="text"
-						name="userName"
-						id="userName"
-					/>
-					<label for="title">Title</label>
-					<input
-						type="text"
-						name="title"
-						id="title"
-					/>
-					<label for="content">Content</label>
-					<input
-						type="text"
-						name="content"
-						id="content"
-					/>
+					<div class="formItems">
+						<label for="userName">Username</label>
+						<div>
+							<input
+								type="text"
+								name="userName"
+								id="userName"
+							/>
+						</div>
+					</div>
+					<div class="formItems">
+						<label for="title">Title</label>
+						<div>
+							<input
+								type="text"
+								name="title"
+								id="title"
+							/>
+						</div>
+					</div>
+					<div class="formItems">
+						<label for="content">Content</label>
+						<div>
+							<textarea
+								id="content"
+								name="content"
+								rows="5"
+								cols="122"
+							>
+							</textarea>
+						</div>
+						<div id="formButton">
+							<input type="submit" />
+						</div>
+					</div>
 				</form>
 			</div>
 		</main>
-
-		<footer>
-			<div class="footer"></div>
-		</footer>
 		<script src="./assets/js/form.js"></script>
 		<script src="/assets/js/logic.js"></script>
 	</body>
