@@ -1,0 +1,98 @@
+footer {
+	flex: 0 0 100%;
+	height: 20vh;
+	border: var(--borderBlack);
+	display: flex;
+	flex-direction: column;
+}
+
+#cardSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	min-height: 250px;
+	justify-content: space-around;
+	border: var(--borderBlack);
+	border-radius: 4px;
+}
+
+.cardTitle {
+	margin: 5px;
+	color: var(--black);
+	border-bottom: var(--borderBlack);
+	font-weight: bolder;
+}
+
+.cardContent {
+	height: 60%;
+	margin: 5px;
+	color: var(--black);
+	border: var(--borderBlack);
+}
+
+.cardUsername {
+	margin: 5px;
+	color: var(--black);
+	border-top: var(--borderBlack);
+	font-style: italic;
+}
+
+.footerItems {
+	flex: 0 0 100%;
+	height: 19vh;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.footerItems p {
+	color: var(--black);
+}
+.nav {
+	display: flex;
+	width: 40%;
+	height: 20%;
+	align-items: center;
+}
+
+.nav a {
+	font-size: 16px;
+	color: var(--black);
+}
+
+.copyright {
+	display: flex;
+	height: 20%;
+	justify-content: center;
+}
+
+.copyright p {
+	margin: 0;
+	text-align: center;
+	color: var(--black);
+}
+
+#headerTitle {
+	display: flex;
+	flex: 1 1 100%;
+	align-items: center;
+}
+
+#headerTitle h1 {
+	margin: 0;
+	margin-left: 30px;
+	font-weight: bold;
+	color: var(--black);
+}
+
+.headerButtons button {
+	min-width: 80px;
+	min-height: 40px;
+	background-color: var(--black);
+	color: var(--white);
+	font-size: 24px;
+}

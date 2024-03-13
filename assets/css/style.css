@@ -1,5 +1,23 @@
 :root {
 	--borderBlack: 2px solid black;
+	--borderwhite: 2px solid white;
+	--black: black;
+	--white: white;
+	--gradient: linear-gradient(
+		0deg,
+		rgba(143, 143, 143, 1) 0%,
+		rgba(255, 203, 0, 1) 76%
+	);
+	--gradientLight: linear-gradient(
+		0deg,
+		rgba(143, 143, 143, 1) 0%,
+		rgba(255, 203, 0, 1) 76%
+	);
+	--gradientDark: linear-gradient(
+		0deg,
+		rgba(143, 143, 143, 1) 0%,
+		rgba(164, 0, 255, 1) 80%
+	);
 }
 
 /* * {
@@ -13,6 +31,7 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 	margin: 0;
+	background-color: var(--white);
 }
 
 header {
@@ -22,14 +41,12 @@ header {
 	flex: 0 0 100%;
 	margin-bottom: 2px;
 	height: 70px;
-	border-bottom: var(--borderBlack);
-	border-left: var(--borderBlack);
-	border-right: var(--borderBlack);
+	border: var(--borderBlack);
 }
 
 main {
 	flex: 0 0 100%;
-	height: 90vh;
+	min-height: 90vh;
 	display: flex;
 	flex-direction: row;
 	margin-top: 2px;
@@ -47,7 +64,7 @@ main {
 	margin-right: 2px;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid black;
+	border: var(--borderBlack);
 }
 
 .welcomeCircle {
@@ -57,37 +74,13 @@ main {
 	border-radius: 100%;
 	justify-content: center;
 	align-items: center;
-	background: rgb(143, 143, 143);
-	background: linear-gradient(
-		0deg,
-		rgba(143, 143, 143, 1) 0%,
-		rgba(255, 203, 0, 1) 76%
-	);
+	background: var(--gradient);
 }
 
 .welcomeCircle h1 {
 	font-size: 400%;
 	color: white;
-}
-
-.userForm {
-	flex: 1 1 50%;
-	display: flex;
-	flex-direction: column;
-	margin-left: 2px;
-	justify-content: center;
-	border: 2px solid black;
-}
-#formButton {
-	display: flex;
-	justify-content: center;
-}
-
-#formButton input {
-	color: white;
-	background-color: black;
-	height: 4vh;
-	width: 100%;
+	text-align: center;
 }
 
 a {
@@ -100,34 +93,13 @@ a {
 	font-size: 200%;
 }
 
-.formItems {
+.headerButtons {
 	display: flex;
-	flex-direction: column;
-	line-height: 28px;
-	padding: 10px;
+	align-items: center;
+	margin-right: 10px;
 }
 
-.formItems div {
-	display: flex;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-.formItems div input[type="text"] {
-	flex: 0 0 99%;
-	padding: top;
-}
-
-.formItems textarea {
-	border-radius: 4px;
-}
-
-.formItems input {
-	line-height: 28px;
-	border-radius: 4px;
-}
-
-.userForm h2 {
-	text-align: center;
-	font-size: 200%;
+.darkmode .headerButtons a {
+	height: 70%;
+	margin-left: 10px;
 }

@@ -1,0 +1,59 @@
+.userForm {
+	flex: 1 1 50%;
+	display: flex;
+	flex-direction: column;
+	margin-left: 2px;
+	justify-content: center;
+	border: var(--borderBlack);
+}
+
+#formBoxTitle {
+	color: var(--black);
+}
+
+#formButton {
+	display: flex;
+	justify-content: center;
+}
+
+#formButton input {
+	color: var(--white);
+	background-color: var(--black);
+	height: 4vh;
+	width: 100%;
+}
+
+.formItems {
+	display: flex;
+	flex-direction: column;
+	line-height: 28px;
+	padding: 10px;
+}
+.formItems label {
+	color: var(--black);
+}
+
+.formItems div {
+	display: flex;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.formItems div input[type="text"] {
+	flex: 0 0 99%;
+	padding: top;
+}
+
+.formItems textarea {
+	border-radius: 4px;
+}
+
+.formItems input {
+	line-height: 28px;
+	border-radius: 4px;
+}
+
+.userForm h2 {
+	text-align: center;
+	font-size: 200%;
+}
