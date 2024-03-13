@@ -24,9 +24,11 @@ function submitForm(event) {
 			content: formContent,
 		};
 
-		const jsonData = JSON.stringify(formData);
+		const oldData = JSON.parse(localStorage.getItem("postData")) || [];
 
-		localStorage.setItem("postData", jsonData);
+		oldData.push(formData);
+
+		localStorage.setItem("postData", JSON.stringify(oldData));
 
 		window.location.href = "blog.html";
 	}
